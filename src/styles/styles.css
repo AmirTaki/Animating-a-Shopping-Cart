@@ -52,5 +52,22 @@ button {
     top : 40px;
     right: 50%;
     width: 40px;
-    
+    opacity: 0;
+    animation: zoom 1s ease forwards;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 0;
+        right: 40px;
+        transform: scale(1)       
+    }
 }
