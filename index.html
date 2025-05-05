@@ -46,4 +46,16 @@
     </ul>
     
 </body>
+<script>
+    $("button").on("click", function(){
+        $(this).closet("li")
+        .find("img")
+        .clone()
+        .addClass('zoom')
+        .appendTo('body')
+        setTimeout(function(){
+            $(".zomm").remove();
+        }, 1000)
+    })
+</script>
 </html>
