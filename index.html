@@ -48,14 +48,14 @@
 </body>
 <script>
     $("button").on("click", function(){
-        $(this).closet("li")
+        $(this).closest("li")
         .find("img")
         .clone()
-        .addClass('zoom')
-        .appendTo('body')
+        .addClass("zoom")
+        .appendTo("body")
         setTimeout(function(){
-            $(".zomm").remove();
-        }, 1000)
+            $(".zoom").remove();
+        }, 1000);
     })
 </script>
 </html>
